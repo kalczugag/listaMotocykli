@@ -14,7 +14,7 @@ if ($result->num_rows > 0) {
     echo "</tr>";
   }
 } else {
-  echo "<tr><td colspan='4'>No motorcycles found.</td></tr>";
+  echo "<tr><td colspan='4'>Nie znaleziono motocykla.</td></tr>";
 }
 
 $conn->close();

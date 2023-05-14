@@ -6,9 +6,9 @@ $model = $_POST['model'];
 
 $sql = "INSERT INTO motorcycles (make, model) VALUES ('$make', '$model')";
 if ($conn->query($sql) === TRUE) {
-  echo "Motorcycle added successfully.";
+  echo "Dodano motocykl.";
 } else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
+  echo "Błąd: " . $sql . "<br>" . $conn->error;
 }
 
 $conn->close();

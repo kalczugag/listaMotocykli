@@ -12,11 +12,11 @@ if ($result->num_rows > 0) {
     echo "<td>" . $row["id"] . "</td> ";
     echo "<td>" . $row["make"] . "</td> ";
     echo "<td>" . $row["model"] . "</td>";
-    echo "<td><a href='edit.php?id=" . $row["id"] . "'>Edit</a> | <a href='delete.php?id=" . $row["id"] . "'>Delete</a></td>";
+    echo "<a href='delete.php?id=" . $row["id"] . "'>Usuń</a></td>";
     echo "</tr>";
   }
 } else {
-  echo "<tr><td colspan='4'>No motorcycles found.</td></tr>";
+  echo "<tr><td colspan='4'>Nie znaleziono motocykla.</td></tr>";
 }
 
 $conn->close();

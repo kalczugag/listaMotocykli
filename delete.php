@@ -7,12 +7,12 @@ if(isset($_GET['id'])) {
     $sql = "DELETE FROM motorcycles WHERE id = '$id'";
     
     if ($conn->query($sql) === TRUE) {
-        echo "Motorcycle deleted successfully.";
+        echo "Usunięto.";
     } else {
-        echo "Error deleting motorcycle: " . $conn->error;
+        echo "Błąd: " . $conn->error;
     }
 } else {
-    echo "Invalid motorcycle ID.";
+    echo "Nieprawidłowe ID.";
 }
 
 $conn->close();
